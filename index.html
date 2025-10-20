@@ -21,13 +21,14 @@
 
   <!-- Picking Points -->
   <section id="picking-points">
-    <button id="toggle-points">Show Picking Points</button>
-    <ul id="points-list" style="display:none;">
-      <li>Point A</li>
-      <li>Point B</li>
-      <li>Point C</li>
-    </ul>
-  </section>
+  <h2>Choose Picking Point</h2>
+  <form id="picking-form">
+    <label><input type="radio" name="point" value="Point A"> Point A</label><br>
+    <label><input type="radio" name="point" value="Point B"> Point B</label><br>
+    <label><input type="radio" name="point" value="Point C"> Point C</label><br>
+  </form>
+</section>
+
 
   <!-- Baked Goods -->
   <section id="products">
@@ -77,6 +78,13 @@
       <button type="submit">Submit Order</button>
     </form>
   </section>
+
+  <section id="cart-summary">
+  <h2>Your Cart</h2>
+  <ul id="cart-items"></ul>
+  <p id="total-price">Total: $0</p>
+</section>
+
 
   <script src="script.js"></script>
 </body>

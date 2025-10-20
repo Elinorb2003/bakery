@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Barkay Bakery</h1>
+    <p>Fresh artisanal breads and pastries daily!</p>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi! I bake fresh, artisanal breads and pastries daily. Enjoy the taste of homemade goodness.</p>
+  </section>
+
+  <!-- Picking Points -->
+  <section id="picking-points">
+    <h2>Choose Picking Point</h2>
+    <form id="picking-form">
+      <label><input type="radio" name="point" value="Point A"> Point A</label><br>
+      <label><input type="radio" name="point" value="Point B"> Point B</label><br>
+      <label><input type="radio" name="point" value="Point C"> Point C</label><br>
+    </form>
+  </section>
+
+  <!-- Baked Goods -->
+  <section id="products">
+    <h2>Our Baked Goods</h2>
+    <div class="product" data-id="1" data-price="25">
+      <img src="bread1.jpg" alt="Sourdough Bread">
+      <h3>Sourdough Bread</h3>
+      <p>Price: $25</p>
+      <input type="number" min="0" value="0" class="qty">
+    </div>
+    <div class="product" data-id="2" data-price="10">
+      <img src="croissant.jpg" alt="Croissant">
+      <h3>Croissant</h3>
+      <p>Price: $10</p>
+      <input type="number" min="0" value="0" class="qty">
+    </div>
+    <div class="product" data-id="3" data-price="8">
+      <img src="bagel.jpg" alt="Bagel">
+      <h3>Bagel</h3>
+      <p>Price: $8</p>
+      <input type="number" min="0" value="0" class="qty">
+    </div>
+  </section>
+
+  <!-- Cart Summary -->
+  <section id="cart-summary">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <p id="total-price">Total: $0</p>
+  </section>
+
+  <!-- Bottom Buttons -->
+  <section id="buttons">
+    <button id="contact-btn">Contact Us</button>
+    <span id="phone" style="display:none;">Phone: 050-123-4567</span>
+    <button id="cart-btn">Cart</button>
+    <button id="share-btn">Share</button>
+  </section>
+
+  <!-- Cart Form -->
+  <section id="cart-form" style="display:none;">
+    <h2>Order Form</h2>
+    <form id="order-form">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="text" id="phone-input" placeholder="Phone Number" required>
+      <input type="email" id="email-input" placeholder="Your Email" required>
+      <select id="payment">
+        <option value="cash">Cash</option>
+        <option value="bit">Bit</option>
+        <option value="paybox">PayBox</option>
+      </select>
+      <textarea id="instructions" placeholder="Instructions"></textarea>
+      <button type="submit">Submit Order</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
 
